@@ -141,7 +141,7 @@ const toggleMobileMenu = () => {
   }
   i.menu-hero__icono{
     display: block;
-    padding: 0 3rem;
+    padding: 0 1rem;
     cursor: pointer;
   }
 
