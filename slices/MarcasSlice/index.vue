@@ -58,12 +58,15 @@ defineProps(
     scroll-margin-top: 120px;
   }
   .marcas-slice__container-images{
-    gap: 3rem;
+    gap: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
     flex-wrap: wrap;
+  }
+  .marcas-slice__content-images{
+    width: 30%;
   }
 
   @media (min-width: 640px) {

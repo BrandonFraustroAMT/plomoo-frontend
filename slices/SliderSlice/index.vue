@@ -20,7 +20,7 @@ const sliderContainer = ref<HTMLDivElement | null>(null);
 const handleScroll = () => {
   if (sliderContainer.value) {
     const scrollPosition = window.scrollY;
-    sliderContainer.value.scrollLeft = scrollPosition / 3; 
+    sliderContainer.value.scrollLeft = scrollPosition / 1; 
   }
 };
 
@@ -75,7 +75,7 @@ onUnmounted(() => {
     display: flex;
     gap: 1rem;
     scroll-snap-type: x mandatory;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .slider-slice__images{
     border: 12px solid var(--backgrounLigth);
