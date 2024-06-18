@@ -200,7 +200,7 @@ defineProps(
 
   @media (min-width: 1024px) {
     .hero-section__container {
-      background-image: url(/_nuxt/assets/img/background-hero.svg);
+      background-image: url(/assets/img/background-hero.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: bottom;
