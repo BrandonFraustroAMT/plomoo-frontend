@@ -24,7 +24,7 @@ defineProps(
           <div class="seo-slice__columns-group">
             <div>
               <!-- LOGO -->
-               <p class="seo-slice__image-logo">Logo</p>
+               <p class="seo-slice__image-logo"><PrismicImage :field="slice.primary.logo" /></p>
               <!-- <PrismicImage :field="slice.primary.logo" class="seo-slice__image-logo" /> -->
               <div class="seo-slice__rights-container">
                 <p class="seo-slice__rights-text">{{ slice.primary.labelrights }}</p>
@@ -157,10 +157,9 @@ defineProps(
   .seo-slice__columns-group{
     margin-top: 3rem;
   }
-  .seo-slice__image-logo{
-    width: auto;
-    height: 1.75rem;
-    margin-bottom: .5rem;
+  .seo-slice__image-logo {
+    width: 35%;
+    margin-bottom: -0.5rem;
   }
   .seo-slice__rights-container{
     opacity: .75;

@@ -401,12 +401,12 @@ export interface NavegacionSliceSliceDefaultPrimary {
   /**
    * Logo field in *NavegacionSlice → Default → Primary*
    *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: Logo
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
    * - **API ID Path**: navegacion_slice.default.primary.logo
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#image
    */
-  logo: prismic.RichTextField;
+  logo: prismic.ImageField<never>;
 
   /**
    * NavegacionMenu field in *NavegacionSlice → Default → Primary*

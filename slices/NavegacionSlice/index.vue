@@ -30,7 +30,7 @@ const toggleMobileMenu = () => {
     <div class="menu">
       <div class="menu-hero__nav">
         <div class="menu-hero__logo">
-          <PrismicRichText :field="slice.primary.logo" class="logo"/>
+          <PrismicImage :field="slice.primary.logo" />
         </div>
         <div class="menu-hero__container" :class="{ 'open-menu': showMobileMenu }">
           <div class="menu-hero__section">
@@ -73,7 +73,7 @@ const toggleMobileMenu = () => {
     z-index: 11;
   }
   .menu-hero__logo {
-    width: 35%;
+    width: 45px;
   }
   .logo {
     font-size: 15px;
@@ -186,7 +186,8 @@ const toggleMobileMenu = () => {
       padding-left: 2rem;
     }
     .menu-hero__logo{
-      padding-right: 2rem;
+      padding-right: 4rem;
+      width: 12%;
     }
     .logo{
       padding-top: 34px;
@@ -209,7 +210,7 @@ const toggleMobileMenu = () => {
       display: flex;
       flex-direction: row;
       padding-right: 100px;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     .menu-hero__section-label {
       justify-content: center;

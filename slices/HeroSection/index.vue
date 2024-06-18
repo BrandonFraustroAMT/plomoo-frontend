@@ -55,7 +55,7 @@ defineProps(
 <style>
   .hero-section__container {
     color: var(--white);
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     overflow: hidden;
     width: 100%;
