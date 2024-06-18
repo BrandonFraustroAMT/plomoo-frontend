@@ -1,0 +1,80 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"titulo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Top-notch availability, security, and support",
+							"spans": [
+								{
+									"type": "strong",
+									"start": 0,
+									"end": 45
+								}
+							]
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"groupsites": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitulo",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "electricity",
+									"type": "Text"
+								}
+							],
+							[
+								"imagen_sites",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+										"width": 3344,
+										"height": 2509
+									},
+									"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+									"width": 3344,
+									"height": 2509,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"descripcion",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Natively headless, Prismic serves over 30 billion API requests each month to mission-critical websites. Large e-commerce sites trust Prismic on Black Friday and major betting sites during sports events."
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

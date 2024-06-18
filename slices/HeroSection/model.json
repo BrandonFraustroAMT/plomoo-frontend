@@ -1,0 +1,97 @@
+{
+  "id": "hero_section",
+  "type": "SharedSlice",
+  "name": "HeroSection",
+  "description": "HeroSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titulo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Titulo",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "subtitulo": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitulo",
+            "placeholder": ""
+          }
+        },
+        "groupherosection": {
+          "type": "Group",
+          "config": {
+            "label": "GroupHeroSection",
+            "repeat": true,
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "label",
+                  "placeholder": ""
+                }
+              },
+              "icono": {
+                "type": "Image",
+                "config": {
+                  "label": "icono",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "botonlink": {
+          "type": "Link",
+          "config": {
+            "label": "BotonLink",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "botontexto": {
+          "type": "Text",
+          "config": {
+            "label": "BotonTexto",
+            "placeholder": ""
+          }
+        },
+        "labellink": {
+          "type": "Link",
+          "config": {
+            "label": "LabelLink",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        },
+        "imagenfondo": {
+          "type": "Image",
+          "config": {
+            "label": "ImagenFondo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

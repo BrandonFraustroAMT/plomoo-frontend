@@ -1,0 +1,39 @@
+{
+  "id": "slider_slice",
+  "type": "SharedSlice",
+  "name": "SliderSlice",
+  "description": "SliderSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "groupimages": {
+          "type": "Group",
+          "config": {
+            "label": "GroupImages",
+            "repeat": true,
+            "fields": {
+              "imagen": {
+                "type": "Image",
+                "config": {
+                  "label": "imagen",
+                  "constraint": {
+                    "width": 456,
+                    "height": 342
+                  },
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

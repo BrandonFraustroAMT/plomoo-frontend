@@ -1,0 +1,87 @@
+{
+  "id": "navegacion_slice",
+  "type": "SharedSlice",
+  "name": "NavegacionSlice",
+  "description": "NavegacionSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "logo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Logo",
+            "placeholder": "Logo",
+            "allowTargetBlank": true,
+            "multi": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "navegacionmenu": {
+          "type": "Group",
+          "config": {
+            "label": "NavegacionMenu",
+            "repeat": true,
+            "fields": {
+              "sectionlabel": {
+                "type": "Text",
+                "config": {
+                  "label": "SectionLabel",
+                  "placeholder": ""
+                }
+              },
+              "sectionlink": {
+                "type": "Select",
+                "config": {
+                  "label": "SectionLink",
+                  "placeholder": "",
+                  "options": [
+                    "1",
+                    "2"
+                  ]
+                }
+              },
+              "boton": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Boton",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
+                }
+              },
+              "botonlink": {
+                "type": "Link",
+                "config": {
+                  "label": "BotonLink",
+                  "placeholder": "",
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "botonlink": {
+          "type": "Link",
+          "config": {
+            "label": "BotonLink",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "botontexto": {
+          "type": "Text",
+          "config": {
+            "label": "BotonTexto",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

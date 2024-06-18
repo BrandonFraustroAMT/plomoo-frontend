@@ -1,0 +1,46 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"titulo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Anim fugiat officia aliqua labore nostrud ea labore. Officia irure occaecat aliquip nulla occaecat ea anim minim reprehenderit mollit nostrud est est occaecat officia."
+						}
+					}
+				]
+			},
+			"groupprecios": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subtitulo",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "who",
+									"type": "Text"
+								}
+							],
+							[
+								"descripcion",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "beautiful",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

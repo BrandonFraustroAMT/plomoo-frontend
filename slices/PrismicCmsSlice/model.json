@@ -1,0 +1,82 @@
+{
+  "id": "prismic_cms_slice",
+  "type": "SharedSlice",
+  "name": "PrismicCmsSlice",
+  "description": "PrismicCmsSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "titulo": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Titulo",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "subtitulo": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitulo",
+            "placeholder": ""
+          }
+        },
+        "linklabel": {
+          "type": "Link",
+          "config": {
+            "label": "LinkLabel",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Label",
+            "placeholder": ""
+          }
+        },
+        "groupdescripcion": {
+          "type": "Group",
+          "config": {
+            "label": "GroupDescripcion",
+            "repeat": true,
+            "fields": {
+              "descripcion": {
+                "type": "Text",
+                "config": {
+                  "label": "descripcion",
+                  "placeholder": ""
+                }
+              },
+              "icono": {
+                "type": "Image",
+                "config": {
+                  "label": "Icono",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "imagen_muestra": {
+          "type": "Image",
+          "config": {
+            "label": "Imagen Muestra",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

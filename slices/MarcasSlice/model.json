@@ -1,0 +1,48 @@
+{
+  "id": "marcas_slice",
+  "type": "SharedSlice",
+  "name": "MarcasSlice",
+  "description": "MarcasSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "labeldescripcion": {
+          "type": "StructuredText",
+          "config": {
+            "label": "LabelDescripcion",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "grouplogos": {
+          "type": "Group",
+          "config": {
+            "label": "Grouplogos",
+            "repeat": true,
+            "fields": {
+              "imagenlogo": {
+                "type": "Image",
+                "config": {
+                  "label": "Imagenlogo",
+                  "constraint": {
+                    "width": 182,
+                    "height": 182
+                  },
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

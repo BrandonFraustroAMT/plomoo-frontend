@@ -1,0 +1,17 @@
+:root {
+    --backgrounBlack: #151515;
+    --backgrounLigth: #1F1F1F;
+    --white: #FFFFFF;
+    --whiteHover: #bebdbd;
+    --textPurple: rgb(142 68 326);
+    --textGray: #A4A4A4;
+    --textBlack: #505050;
+    --boxGray: #303030;
+    --boxPink: rgb(245 230 255);
+}
+
+body {
+    background-color: var(--backgrounBlack);
+    color: var(--white);
+    font-family: sans-serif;
+}

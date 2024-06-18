@@ -1,0 +1,53 @@
+{
+  "format": "page",
+  "id": "navegacion",
+  "label": "Plomoo",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "NavegacionMenu",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navegacion_slice": {
+              "type": "SharedSlice"
+            },
+            "prismic_cms_slice": {
+              "type": "SharedSlice"
+            },
+            "sites_slice": {
+              "type": "SharedSlice"
+            },
+            "slider_slice": {
+              "type": "SharedSlice"
+            },
+            "seo_slice": {
+              "type": "SharedSlice"
+            },
+            "precios_slice": {
+              "type": "SharedSlice"
+            },
+            "marcas_slice": {
+              "type": "SharedSlice"
+            },
+            "hero_section": {
+              "type": "SharedSlice"
+            },
+            "cta_slice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

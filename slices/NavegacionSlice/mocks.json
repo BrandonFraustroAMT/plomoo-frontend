@@ -1,0 +1,146 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"navegacionmenu": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"sectionlink",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "1",
+									"type": "Select"
+								}
+							],
+							[
+								"boton",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"sectionlabel",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Seccion 1"
+								}
+							],
+							[
+								"botonlink",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"sectionlabel",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Seccion 2"
+								}
+							],
+							[
+								"botonlink",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"sectionlabel",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Seccion 3"
+								}
+							],
+							[
+								"botonlink",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev"
+									}
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"sectionlabel",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Seccion 4"
+								}
+							],
+							[
+								"botonlink",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://google.com"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"botontexto": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Boton"
+			},
+			"logo": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Logo",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"botonlink": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "#"
+				}
+			}
+		},
+		"items": []
+	}
+]
