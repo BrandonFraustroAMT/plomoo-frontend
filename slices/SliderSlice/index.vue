@@ -81,11 +81,13 @@ onUnmounted(() => {
     border-radius: .5rem;
     flex-shrink: 0;
     width: 80%;
+    height: 98%;
   }
 
   @media (min-width: 640px) {
     .slider-slice__images{
       width: 50%;
+      height: 98%;
     }
   }
   @media (min-width: 768px) {
@@ -93,6 +95,7 @@ onUnmounted(() => {
     }
     .slider-slice__images{
       width: 33.333333%;
+      height: 99%;
     }
   }
 </style>
