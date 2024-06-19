@@ -34,6 +34,30 @@
 									"type": "Text",
 									"value": "Te brindamos un sitio web a la medida y facil de ajustar por tu cuenta"
 								}
+							],
+							[
+								"icono",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
+										"width": 4000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?rect=0%2C0%2C4000%2C4000&w=24&h=24",
+									"width": 24,
+									"height": 24,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"thumbnails": {}
+								}
 							]
 						]
 					},
@@ -47,6 +71,30 @@
 									"type": "Text",
 									"value": "Construido con el poder del código y con diseños inigualable"
 								}
+							],
+							[
+								"icono",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+										"width": 6000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?rect=1000%2C0%2C4000%2C4000&w=24&h=24",
+									"width": 24,
+									"height": 24,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 1000,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"thumbnails": {}
+								}
 							]
 						]
 					},
@@ -59,6 +107,30 @@
 									"__TYPE__": "FieldContent",
 									"type": "Text",
 									"value": "Optimizado para buscadores y host de alto rendimiento"
+								}
+							],
+							[
+								"icono",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+										"width": 4000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?rect=0%2C0%2C4000%2C4000&w=24&h=24",
+									"width": 24,
+									"height": 24,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"thumbnails": {}
 								}
 							]
 						]
@@ -76,7 +148,6 @@
 				"value": "Enviar un whatsapp"
 			},
 			"imagenfondo": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
@@ -94,6 +165,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},

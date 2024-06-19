@@ -45,7 +45,10 @@
                 "type": "Image",
                 "config": {
                   "label": "icono",
-                  "constraint": {},
+                  "constraint": {
+                    "width": 24,
+                    "height": 24
+                  },
                   "thumbnails": []
                 }
               }

@@ -58,14 +58,13 @@ onUnmounted(() => {
 <style>
   .slider-slice__container{
     color: var(--white);
-    padding: 3rem 0;
     width: 100%;
   }
   .slider-slice__content{
     margin-top: 0;
     overflow: hidden;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .slider-slice__data{
     width: 100%;
@@ -91,8 +90,6 @@ onUnmounted(() => {
   }
   @media (min-width: 768px) {
     .slider-slice__container{
-      padding-top: 5rem;
-      padding-bottom: 5rem;
     }
     .slider-slice__images{
       width: 33.333333%;

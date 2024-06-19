@@ -4,26 +4,24 @@
 		"variation": "default",
 		"primary": {
 			"logo": {
+				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
-					"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
-					"width": 3935,
-					"height": 5894
+					"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+					"width": 3168,
+					"height": 4752
 				},
-				"url": "https://images.unsplash.com/photo-1587905069134-008460d7a636",
-				"width": 3935,
-				"height": 5894,
+				"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?rect=0%2C792%2C3168%2C3168&w=103&h=103",
+				"width": 103,
+				"height": 103,
 				"edit": {
 					"zoom": 1,
 					"crop": {
 						"x": 0,
-						"y": 0
+						"y": 792
 					},
 					"background": "transparent"
 				},
-				"credits": null,
-				"alt": null,
-				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
 			"groupredessociales": {

@@ -45,7 +45,10 @@
                 "type": "Image",
                 "config": {
                   "label": "Imagen Sites",
-                  "constraint": {},
+                  "constraint": {
+                    "width": 604,
+                    "height": 403
+                  },
                   "thumbnails": []
                 }
               }
