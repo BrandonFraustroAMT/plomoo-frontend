@@ -66,7 +66,7 @@ defineProps(
     flex-wrap: wrap;
   }
   .marcas-slice__content-images{
-    width: 30%;
+    width: 8rem;
   }
 
   @media (min-width: 640px) {

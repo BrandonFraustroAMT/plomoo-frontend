@@ -28,7 +28,9 @@ defineProps(
             <div class="hero-section_content-list">
               <template v-for="item in slice.primary.groupherosection">
                 <p class="hero-section_content-text">
-                  <PrismicImage :field="item.icono" class="hero-section__content-icon" />
+                  <div class="hero-section__container-icon">
+                    <PrismicImage :field="item.icono" class="hero-section__content-icon" />
+                  </div>
                   {{ item.label }}
                 </p>
               </template>
@@ -110,6 +112,9 @@ defineProps(
     flex-direction: column;
     margin-top: 2rem;
   }
+  .hero-section__container-icon {
+    width: 3rem;
+  }
   .hero-section__content-icon{
     margin-right: 3px;
   }
@@ -121,7 +126,8 @@ defineProps(
     text-align: left;
     align-items: center;
     position: relative;
-    margin: 10px 0
+    margin: 10px 0;
+    padding: 0 4px;
   }
   .hero-section__buttons{
     display: flex;
@@ -196,6 +202,9 @@ defineProps(
     .hero-section__buttons-content{
       padding: 0 1rem;
     }
+    .hero-section__container-icon{
+      width: 6rem;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -222,6 +231,9 @@ defineProps(
     .hero-section__buttons-content{
       margin-top: 2.5rem;
       padding: 0 1.5rem;
+    }
+    .hero-section__container-icon{
+      width: 8rem;
     }
   }
   @media (min-width: 1280px) {

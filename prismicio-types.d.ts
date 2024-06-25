@@ -28,7 +28,38 @@ interface NavegacionDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<NavegacionDocumentDataSlicesSlice>;
+  slices: prismic.SliceZone<NavegacionDocumentDataSlicesSlice> /**
+   * Meta Tittle field in *Plomoo*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navegacion.meta_tittle
+   * - **Tab**: SEOMain
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */;
+  meta_tittle: prismic.RichTextField;
+
+  /**
+   * Meta Description field in *Plomoo*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navegacion.meta_description
+   * - **Tab**: SEOMain
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Thumbnail field in *Plomoo*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navegacion.meta_thumbnail
+   * - **Tab**: SEOMain
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_thumbnail: prismic.ImageField<never>;
 }
 
 /**

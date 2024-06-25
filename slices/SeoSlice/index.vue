@@ -29,12 +29,17 @@ defineProps(
               <div class="seo-slice__rights-container">
                 <p class="seo-slice__rights-text">{{ slice.primary.labelrights }}</p>
               </div>
-              <template v-for="item in slice.primary.groupredessociales" class="seo-slice__icons-container">
-                <PrismicLink :field="item.linkicon" class="seo-slice__icons-link" >
-                  <PrismicImage :field="item.icono" />
-                  <span class="seo-slice__icons-text">X</span>
-                </PrismicLink>
-              </template>
+
+              <div class="seo-slice__icons-container">
+                <template v-for="item in slice.primary.groupredessociales">
+                  <div class="seo-slice__link-box">
+                    <PrismicLink :field="item.linkicon" class="seo-slice__icons-link" >
+                      <PrismicImage :field="item.icono" />
+                      <span class="seo-slice__icons-text">X</span>
+                    </PrismicLink>
+                  </div>
+                </template>
+              </div>
               <!-- <nav class="seo-slice__icons-container">
                 <a href="#"></a>
                 <a href="#"></a>
@@ -210,6 +215,9 @@ defineProps(
     color: var(--white);
     text-decoration: none;
     opacity: .75;
+  }
+  .seo-slice__link-box{
+
   }
   
   @media (min-width: 640px) {

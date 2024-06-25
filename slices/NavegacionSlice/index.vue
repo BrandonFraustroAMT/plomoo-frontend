@@ -74,6 +74,7 @@ const toggleMobileMenu = () => {
   }
   .menu-hero__logo {
     width: 45px;
+    z-index: 1;
   }
   .logo {
     font-size: 15px;
@@ -116,6 +117,9 @@ const toggleMobileMenu = () => {
   }
   .menu-hero__section-label{
     padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #505050;
   }
 
   .menu-hero__section-link{
@@ -151,7 +155,7 @@ const toggleMobileMenu = () => {
       top: 0;
       right: 0;
       height: 100vh;
-      width: 60%;
+      width: 100%;
       transform: translateX(100%);
     }
     .menu-hero__container.open-menu {
@@ -165,6 +169,7 @@ const toggleMobileMenu = () => {
       display: flex;
       flex-direction: column;
       margin-top: 3rem;
+      padding-bottom: 20px
     }
     .menu-hero__section-link {
       font-size: 15px;
@@ -216,6 +221,7 @@ const toggleMobileMenu = () => {
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      border-bottom: none;
     }
     #menu-hero__btn {
       display: block;
@@ -237,6 +243,24 @@ const toggleMobileMenu = () => {
   @media (min-width: 1400px) {
     .menu-hero__nav{
       max-width: 1440px;
+      padding: 0px 5rem;
+    }
+  }
+  @media (min-width: 1600px) {
+    .menu-hero__nav{
+      max-width: 1600px;
+      padding: 0px 5rem;
+    }
+  }
+  @media (min-width: 1800px) {
+    .menu-hero__nav{
+      max-width: 1800px;
+      padding: 0px 5rem;
+    }
+  }
+  @media (min-width: 2160px) {
+    .menu-hero__nav{
+      max-width: 2160px;
       padding: 0px 5rem;
     }
   }
