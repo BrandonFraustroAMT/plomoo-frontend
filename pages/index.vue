@@ -44,7 +44,7 @@ const { client } = usePrismic();
 const fetchData = async () => {
   try {
       const response = await client.getByUID('navegacion', 'plomoo');
-      console.log(response);
+      /* console.log(response); */
       document.value = response;
   } catch (error) {
     console.log('Error fetching document:', error);
