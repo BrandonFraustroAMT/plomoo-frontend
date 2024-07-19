@@ -10,21 +10,6 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"sectionlink",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "1",
-									"type": "Select"
-								}
-							],
-							[
-								"boton",
-								{
-									"__TYPE__": "BooleanContent",
-									"value": true
-								}
-							],
-							[
 								"sectionlabel",
 								{
 									"__TYPE__": "FieldContent",
@@ -40,6 +25,14 @@
 										"__TYPE__": "ExternalLink",
 										"url": "http://twitter.com"
 									}
+								}
+							],
+							[
+								"linklabel",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "history",
+									"type": "Text"
 								}
 							]
 						]
@@ -64,6 +57,14 @@
 										"url": "http://twitter.com"
 									}
 								}
+							],
+							[
+								"linklabel",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "gently",
+									"type": "Text"
+								}
 							]
 						]
 					},
@@ -86,6 +87,14 @@
 										"__TYPE__": "ExternalLink",
 										"url": "https://slicemachine.dev"
 									}
+								}
+							],
+							[
+								"linklabel",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "trade",
+									"type": "Text"
 								}
 							]
 						]
@@ -110,6 +119,14 @@
 										"url": "http://google.com"
 									}
 								}
+							],
+							[
+								"linklabel",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "fifteen",
+									"type": "Text"
+								}
 							]
 						]
 					}
@@ -128,7 +145,6 @@
 				}
 			},
 			"logo": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
@@ -146,6 +162,9 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			}
 		},

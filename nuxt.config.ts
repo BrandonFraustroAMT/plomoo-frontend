@@ -20,6 +20,11 @@ export default defineNuxtConfig({
    routes: [
      // Resolves the Homepage document to "/"
      {
+       type: 'agenda',
+       path: "/about",
+       component: "pages/about.vue"
+     },
+     {
        type: 'navegacion',
        path: '/',
      },

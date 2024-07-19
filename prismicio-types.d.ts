@@ -4,6 +4,67 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+type AgendaDocumentDataSlicesSlice = AgendaSlice;
+
+/**
+ * Content for Agenda documents
+ */
+interface AgendaDocumentData {
+  /**
+   * Slice Zone field in *Agenda*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: agenda.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<AgendaDocumentDataSlicesSlice> /**
+   * Meta Description field in *Agenda*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: agenda.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Agenda*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: agenda.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Agenda*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: agenda.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Agenda document from Prismic
+ *
+ * - **API ID**: `agenda`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type AgendaDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<AgendaDocumentData>, "agenda", Lang>;
+
 type NavegacionDocumentDataSlicesSlice =
   | NavegacionSliceSlice
   | PrismicCmsSliceSlice
@@ -78,7 +139,34 @@ export type NavegacionDocument<Lang extends string = string> =
     Lang
   >;
 
-export type AllDocumentTypes = NavegacionDocument;
+export type AllDocumentTypes = AgendaDocument | NavegacionDocument;
+
+/**
+ * Default variation for Agenda Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AgendaSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Agenda*
+ */
+type AgendaSliceVariation = AgendaSliceDefault;
+
+/**
+ * Agenda Shared Slice
+ *
+ * - **API ID**: `agenda`
+ * - **Description**: Agenda
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AgendaSlice = prismic.SharedSlice<"agenda", AgendaSliceVariation>;
 
 /**
  * Primary content in *CtaSlice → Default → Primary*
@@ -394,27 +482,6 @@ export interface NavegacionSliceSliceDefaultPrimaryNavegacionmenuItem {
   sectionlabel: prismic.KeyTextField;
 
   /**
-   * SectionLink field in *NavegacionSlice → Default → Primary → NavegacionMenu*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **API ID Path**: navegacion_slice.default.primary.navegacionmenu[].sectionlink
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  sectionlink: prismic.SelectField<"1" | "2">;
-
-  /**
-   * Boton field in *NavegacionSlice → Default → Primary → NavegacionMenu*
-   *
-   * - **Field Type**: Boolean
-   * - **Placeholder**: *None*
-   * - **Default Value**: false
-   * - **API ID Path**: navegacion_slice.default.primary.navegacionmenu[].boton
-   * - **Documentation**: https://prismic.io/docs/field#boolean
-   */
-  boton: prismic.BooleanField;
-
-  /**
    * BotonLink field in *NavegacionSlice → Default → Primary → NavegacionMenu*
    *
    * - **Field Type**: Link
@@ -423,6 +490,16 @@ export interface NavegacionSliceSliceDefaultPrimaryNavegacionmenuItem {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   botonlink: prismic.LinkField;
+
+  /**
+   * LinkLabel field in *NavegacionSlice → Default → Primary → NavegacionMenu*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navegacion_slice.default.primary.navegacionmenu[].linklabel
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  linklabel: prismic.KeyTextField;
 }
 
 /**
@@ -1338,10 +1415,16 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
+      AgendaDocument,
+      AgendaDocumentData,
+      AgendaDocumentDataSlicesSlice,
       NavegacionDocument,
       NavegacionDocumentData,
       NavegacionDocumentDataSlicesSlice,
       AllDocumentTypes,
+      AgendaSlice,
+      AgendaSliceVariation,
+      AgendaSliceDefault,
       CtaSliceSlice,
       CtaSliceSliceDefaultPrimary,
       CtaSliceSliceVariation,
